@@ -1,0 +1,43 @@
+[
+  {
+    "title": "Singular Value Decomposition",
+    "contents": [
+      {
+        "name": "Sec1",
+        "notebook_path": "notebooks/CH01/CH01_SEC01_Overview.jl",
+        "video_id": "",
+        "preview_image_url": ""
+      },
+      {
+        "name": "Sec2",
+        "notebook_path": "notebooks/CH01/CH01_SEC02.jl",
+        "video_id": "",
+        "preview_image_url": ""
+      },
+      {
+        "name": "Sec3",
+        "notebook_path": "notebooks/CH01/CH01_SEC03_Rotation.jl",
+        "video_id": "",
+        "preview_image_url": ""
+      },
+      {
+        "name": "Sec4-1",
+        "notebook_path": "notebooks/CH01/CH01_SEC04_1_Linear.jl",
+        "video_id": "",
+        "preview_image_url": ""
+      },
+      {
+        "name": "Sec4-21",
+        "notebook_path": "notebooks/CH01/CH01_SEC04_2_Cement.jl",
+        "video_id": "",
+        "preview_image_url": ""
+      },
+      {
+        "name": "Sec4-3",
+        "notebook_path": "notebooks/CH01/CH01_SEC04_3_Housing.jl",
+        "video_id": "",
+        "preview_image_url": ""
+      }
+    ]
+  }
+]
