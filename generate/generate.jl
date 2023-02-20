@@ -260,12 +260,8 @@ function sidebar_code(book_model)
     <div class="sidebar">
     <div class="container sidebar-sticky">
     <div class="sidebar-about">
-    <br>
-    <img src="$(path_to_asset(LOGO_FILE))" style="margin-left:1em; width: 80px; height: auto; display: inline">
-	<br>
-	<span style="font-size: 30px"> Data-Driven Science and Engineering in Julia </span>
+	<span style="font-size: 30px"> Data-Driven Science and Engineering using Julia </span>
     </div>
-    <br>
     <style>
     </style>
     <nav class="sidebar-nav" style="opacity: 0.9">
