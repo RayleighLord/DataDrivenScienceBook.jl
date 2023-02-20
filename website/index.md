@@ -7,8 +7,7 @@ To set up Pluto, you can watch a quick guide [here](https://www.youtube.com/watc
 
 The content of this repository is based on the second edition of the excellent book:
 
-<img src="https://m.media-amazon.com/images/P/1009098489.01._SCLZZZZZZZ_SX500_.jpg" alt="Book Cover" width=30% style="display: block; margin: 0 auto">
-<!-- ![img](https://github.com/RayleighLord/Resources/blob/main/img/newton_sketch.png?raw=true) -->
+<img src="https://github.com/RayleighLord/DataDrivenScienceBook.jl/blob/main/data/book_cover.jpg?raw=true"  width="30%">
 
 \
 Data-Driven Science And Engineering: Machine Learning, Dynamical Systems, and Control
