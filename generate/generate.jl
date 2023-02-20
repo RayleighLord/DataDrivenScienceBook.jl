@@ -175,7 +175,7 @@ md"""
 import Deno_jll
 
 # ╔═╡ c012ae32-3b48-460c-8b1a-0b3e06f5fda0
-file_server_port = 4600
+file_server_port = 4596
 
 # ╔═╡ 06bfaeee-a6ee-439c-b965-94d0455b0337
 file_server_address(paths::AbstractString...) = join([
@@ -232,7 +232,7 @@ joinpath(@__DIR__(), path_to_asset(LOGO_FILE)) |> isfile
 function sidebar_page(; page, title, path="$(SLASH_PREPATH)$(page)", isbold = false)
 	title = isbold ? bold(title) : title
 	@htl("""
-	<a class="sidebar-nav-item {{ispage $(page)}}active{{end}}" style="font-size: 35px" href="$(path)">$(title)</a>
+	<a class="sidebar-nav-item {{ispage $(page)}}active{{end}}" style="font-size: 35px; line-height: 1.2" href="$(path)">$(title)</a>
 	""")
 end
 
@@ -471,7 +471,7 @@ end
 @skip_as_script @use_task([franklin_page_dir, file_server_port]) do
 
 	run(`$(Deno_jll.deno()) run --allow-net --allow-read https://deno.land/std@0.115.0/http/file_server.ts $(franklin_page_dir) --cors --port $(file_server_port)`)
-
+ 
 end
 
 # ╔═╡ 5c69b7bd-6b18-496f-bcd5-3251a5eb0dd8
