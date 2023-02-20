@@ -14,7 +14,7 @@ html"""
 		<p class="nb-intro-header"> Chapter 1.4 </p>
 		<p class="nb-intro-title"> Cement Mixtures </p>
 		<p style="text-align:center;"> 
-			<img src="https://github.com/RayleighLord/DDScienceBookJulia/blob/main/DATA/svd_overview.png?raw=true" alt="SVD"
+			<img src="https://github.com/RayleighLord/DataDrivenScienceBook.jl/blob/main/data/svd_overview.png?raw=true" alt="SVD"
 			width="35%"
 			class="logo">
 		</p>
@@ -119,10 +119,10 @@ md"""
 """
 
 # ╔═╡ db4935fc-eaf7-48d2-b580-1340531ce204
-A = load("https://raw.githubusercontent.com/RayleighLord/DDScienceBookJulia/main/DATA/hald_ingredients.csv"; header_exists = false) |> DataFrame |> Matrix
+A = load("https://raw.githubusercontent.com/RayleighLord/DataDrivenScienceBook.jl/main/data/hald_ingredients.csv"; header_exists = false) |> DataFrame |> Matrix
 
 # ╔═╡ 67920869-dfc5-4353-8f2e-229df81c9e23
-b = load("https://raw.githubusercontent.com/RayleighLord/DDScienceBookJulia/main/DATA/hald_heat.csv"; header_exists = false) |> DataFrame |> Matrix
+b = load("https://raw.githubusercontent.com/RayleighLord/DataDrivenScienceBook.jl/main/data/hald_heat.csv"; header_exists = false) |> DataFrame |> Matrix
 
 # ╔═╡ c443408c-c678-4314-b708-d2d29fdd1295
 begin
@@ -176,7 +176,7 @@ PlutoUI = "~0.7.40"
 PLUTO_MANIFEST_TOML_CONTENTS = """
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.8.2"
+julia_version = "1.8.4"
 manifest_format = "2.0"
 project_hash = "9a7c2cf3f42befbf83b56b4af25ab8c08d06cd2b"
 
@@ -221,7 +221,7 @@ uuid = "5d742f6a-9f54-50ce-8119-2520741973ca"
 version = "1.0.2"
 
 [[deps.Cairo_jll]]
-deps = ["Artifacts", "Bzip2_jll", "Fontconfig_jll", "FreeType2_jll", "Glib_jll", "JLLWrappers", "LZO_jll", "Libdl", "Pixman_jll", "Pkg", "Xorg_libXext_jll", "Xorg_libXrender_jll", "Zlib_jll", "libpng_jll"]
+deps = ["Artifacts", "Bzip2_jll", "CompilerSupportLibraries_jll", "Fontconfig_jll", "FreeType2_jll", "Glib_jll", "JLLWrappers", "LZO_jll", "Libdl", "Pixman_jll", "Pkg", "Xorg_libXext_jll", "Xorg_libXrender_jll", "Zlib_jll", "libpng_jll"]
 git-tree-sha1 = "4b859a208b2397a7a623a03449e4636bdb17bcf2"
 uuid = "83423d85-b0ee-5818-9007-b63ccbeb887a"
 version = "1.16.1+1"
@@ -277,7 +277,7 @@ version = "4.2.0"
 [[deps.CompilerSupportLibraries_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "e66e0078-7015-5450-92f7-15fbd957f2ae"
-version = "0.5.2+0"
+version = "1.0.1+0"
 
 [[deps.Contour]]
 git-tree-sha1 = "d05d9e7b7aedff4e5b51a029dced05cfb6125781"
@@ -651,9 +651,9 @@ version = "1.42.0+0"
 
 [[deps.Libiconv_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
-git-tree-sha1 = "42b62845d70a619f063a7da093d995ec8e15e778"
+git-tree-sha1 = "c7cb1f5d892775ba13767a87c7ada0b980ea0a71"
 uuid = "94ce4f54-9a6c-5748-9c1c-f9c7231a4531"
-version = "1.16.1+1"
+version = "1.16.1+2"
 
 [[deps.Libmount_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
@@ -867,9 +867,9 @@ uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 
 [[deps.Qt5Base_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Fontconfig_jll", "Glib_jll", "JLLWrappers", "Libdl", "Libglvnd_jll", "OpenSSL_jll", "Pkg", "Xorg_libXext_jll", "Xorg_libxcb_jll", "Xorg_xcb_util_image_jll", "Xorg_xcb_util_keysyms_jll", "Xorg_xcb_util_renderutil_jll", "Xorg_xcb_util_wm_jll", "Zlib_jll", "xkbcommon_jll"]
-git-tree-sha1 = "c6c0f690d0cc7caddb74cef7aa847b824a16b256"
+git-tree-sha1 = "0c03844e2231e12fda4d0086fd7cbe4098ee8dc5"
 uuid = "ea2cea3b-5b76-57ae-a6ef-0a8af62496e1"
-version = "5.15.3+1"
+version = "5.15.3+2"
 
 [[deps.Quadmath]]
 deps = ["Printf", "Random", "Requires"]
