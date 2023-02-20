@@ -110,7 +110,7 @@ pages = [
 SLASH_PREPATH = !isempty(PREPATH) ? "/" * PREPATH : ""
 
 # ╔═╡ 02e00e09-76a5-4f38-8557-4d9caf280b4c
-homepage = (page = "/index.html", path = "$SLASH_PREPATH/", title = "Presentation")
+homepage = (page = "/index.html", path = "$SLASH_PREPATH/", title = "Data-Driven Science and Engineering using Julia")
 
 # ╔═╡ d83ee9b9-d255-4217-a776-3b0f4f168c8f
 @bind regenerate Button("Regenerate!")
@@ -175,7 +175,7 @@ md"""
 import Deno_jll
 
 # ╔═╡ c012ae32-3b48-460c-8b1a-0b3e06f5fda0
-file_server_port = 4599
+file_server_port = 4600
 
 # ╔═╡ 06bfaeee-a6ee-439c-b965-94d0455b0337
 file_server_address(paths::AbstractString...) = join([
@@ -232,7 +232,7 @@ joinpath(@__DIR__(), path_to_asset(LOGO_FILE)) |> isfile
 function sidebar_page(; page, title, path="$(SLASH_PREPATH)$(page)", isbold = false)
 	title = isbold ? bold(title) : title
 	@htl("""
-	<a class="sidebar-nav-item {{ispage $(page)}}active{{end}}" href="$(path)">$(title)</a>
+	<a class="sidebar-nav-item {{ispage $(page)}}active{{end}}" style="font-size: 35px" href="$(path)">$(title)</a>
 	""")
 end
 
@@ -260,11 +260,10 @@ function sidebar_code(book_model)
     <div class="sidebar">
     <div class="container sidebar-sticky">
     <div class="sidebar-about">
-	<span style="font-size: 30px"> Data-Driven Science and Engineering using Julia </span>
     </div>
     <style>
     </style>
-    <nav class="sidebar-nav" style="opacity: 0.9">
+    <nav class="sidebar-nav" style="opacity: 0.9;">
 	$(sidebar_page(; homepage..., isbold = true))
 	$(sidebar_pages(pages))
     <br>
