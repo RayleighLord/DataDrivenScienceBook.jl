@@ -1,13 +1,19 @@
-# Demostración de Julia para un Curso de Informática / Cálculo científico
+# Data-Driven Science and Engineering Book in Julia
 
-El propósito de esta web es dar un pequeño vistazo al lenguaje de programación de Julia y por qué es tan bueno para el cálculo científico.
+\
+This repository contains a collection of the code from the lectures, homework and many interactive visualizations in Julia. The source code is presented in [Pluto](https://www.youtube.com/watch?v=IAF8DjrQSSk&ab_channel=TheJuliaProgrammingLanguage) notebooks, which are interactive tools suited to make learning more intuitive and be able to try different ideas very fast.
 
-En la **Sección 1** se incluye un pequeño repaso de las principales características del lenguaje.
+To set up Pluto, you can watch a quick guide [here](https://www.youtube.com/watch?v=OOjKEgbt8AI&t=1s&ab_channel=TheJuliaProgrammingLanguage), which also covers how to install Julia.
 
-En la **Sección 2** se puede encontrar una recopilación de cuadernos en los que se abordan distintos problemas científicos con el lenguaje Julia. Aquí no solo se hace uso de la potencia del lenguaje, sino que se destaca su sintáxis única que permite hacer un código muy parecido al planteamiento matemático de cualquier problema.
+The content of this repository is based on the second edition of the excellent book:
 
-Finalmente, en la **Sección 3** se incluye una plantilla de cómo se pueden crear deberes interactivos usando Julia y los cuadernos Pluto. Estos cuadernos van corrigiendo de manera dinámica el ejercicio, por lo que el alumno sabe si está desarrollando bien el código o tiene algún error al momento. Se incluye también el cuaderno con las soluciones.
+<img src="https://m.media-amazon.com/images/P/1009098489.01._SCLZZZZZZZ_SX500_.jpg" alt="Book Cover" width=30% style="display: block; margin: 0 auto">
 
-(Como pequeño adelanto, la siguiente imagen se corresponde a una demostración interactiva del método de Newton)
+\
+Data-Driven Science And Engineering: Machine Learning, Dynamical Systems, and Control
+by S. L. Brunton and J. N. Kutz
+Cambridge Textbook, 2022
+Copyright 2022, All Rights Reserved
+<http://databookuw.com/>
 
-![img](https://github.com/RayleighLord/Resources/blob/main/img/newton_sketch.png?raw=true)
+You can also find the [Python](https://github.com/dynamicslab/databook_python) code of the first edition of this book and the [MATLAB](https://github.com/dynamicslab/databook_matlab) version.

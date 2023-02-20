@@ -104,14 +104,13 @@ show_section_number = false
 
 # ╔═╡ 01a2336a-5c04-4d5a-bb0b-a9c704517dbf
 pages = [
-	(page = "/cheatsheets/", title = "Referencias del lenguaje")
 ]
 
 # ╔═╡ c0768146-5ea0-4736-94f8-2c1a2affa922
 SLASH_PREPATH = !isempty(PREPATH) ? "/" * PREPATH : ""
 
 # ╔═╡ 02e00e09-76a5-4f38-8557-4d9caf280b4c
-homepage = (page = "/index.html", path = "$SLASH_PREPATH/", title = "Bienvenido")
+homepage = (page = "/index.html", path = "$SLASH_PREPATH/", title = "Presentation")
 
 # ╔═╡ d83ee9b9-d255-4217-a776-3b0f4f168c8f
 @bind regenerate Button("Regenerate!")
@@ -263,15 +262,8 @@ function sidebar_code(book_model)
     <div class="sidebar-about">
     <br>
     <img src="$(path_to_asset(LOGO_FILE))" style="margin-left:1em; width: 80px; height: auto; display: inline">
-    <div style="font-weight: bold; margin-bottom: 0.5em">
-	$(href("$(SLASH_PREPATH)/semesters/", TERM))
-	<span style="opacity: 0.6;">|
-	$(href(INSTITUTION_URL,INSTITUTION))
-	</span>
-	</div>
-    <h1>$(href("$(SLASH_PREPATH)/",TITLE))</h1>
-    <h2>$(SUBTITLE)</h2>
-    <div style="line-height:18px; font-size: 15px; opacity: 0.85">by $(INSTRUCTORS)</div>
+	<br>
+	<span style="font-size: 30px"> Data-Driven Science and Engineering in Julia </span>
     </div>
     <br>
     <style>
@@ -282,7 +274,7 @@ function sidebar_code(book_model)
     <br>
     $(map(enumerate(book_model)) do (chapter_number, chap)
 		@htl("""
-		<div class="course-section">Sección $(chapter_number): $(chap.title)</div>
+		<div class="course-section">Chapter $(chapter_number): $(chap.title)</div>
 
 		$(map(enumerate(chap.contents)) do (section_number, section)
 

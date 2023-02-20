@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.14
+# v0.19.22
 
 using Markdown
 using InteractiveUtils
@@ -19,7 +19,7 @@ html"""
 		<p class="nb-intro-header"> Chapter 1.1 </p>
 		<p class="nb-intro-title"> Overview of the SVD </p>
 		<p style="text-align:center;"> 
-			<img src="https://github.com/RayleighLord/DDScienceBookJulia/blob/main/DATA/svd_overview.png?raw=true" alt="SVD"
+			<img src="https://github.com/RayleighLord/DataDrivenScienceBook.jl/blob/main/data/svd_overview.png?raw=true" alt="SVD"
 			width="35%"
 			class="logo">
 		</p>
@@ -147,7 +147,7 @@ PlutoUI = "~0.7.40"
 PLUTO_MANIFEST_TOML_CONTENTS = """
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.8.2"
+julia_version = "1.8.4"
 manifest_format = "2.0"
 project_hash = "d77bbb8de3a0eed7452960a8f7d43f370f990a27"
 
@@ -176,7 +176,7 @@ version = "0.11.4"
 [[deps.CompilerSupportLibraries_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "e66e0078-7015-5450-92f7-15fbd957f2ae"
-version = "0.5.2+0"
+version = "1.0.1+0"
 
 [[deps.Dates]]
 deps = ["Printf"]
